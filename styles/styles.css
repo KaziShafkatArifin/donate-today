@@ -190,3 +190,27 @@ footer{
 font-size: 14px;
 font-weight: 400;
 }
+/* responsive styles */
+@media screen and (max-width: 576px){
+  .header{
+    background-image: linear-gradient(180deg, #121212 0%, rgba(18, 18, 18, 0) 100%);
+  }
+  .header-title, .description, .donate > .section-description, .amount, .plan > .section-description, .plan-boxes, .gallery, .update > .section-description, form{
+    padding: 20px;
+    margin: 0; 
+  }
+  .amount, .plan-boxes, .photo-gallery-single{
+    flex-direction: column;
+    gap: 0;
+  }
+  .plan-box, .photo-gallery-single{
+    text-align: center;
+  }
+  .photo-gallery-columns-reverse{
+    flex-direction: column-reverse;
+  }
+  .photo-gallery-single img{
+    height: 100%;
+    width: 100%;
+  }
+}
